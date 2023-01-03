@@ -1,0 +1,84 @@
+.categories-area{
+    width: 100%;
+    position: relative;
+
+    .categories-heading{
+        // text-align: center;
+
+        h2{
+            max-width: 44rem;
+            margin: 0 auto;
+            text-align: center;
+            img{
+                float: right;
+            }
+        }
+        p{
+            text-align: center;
+            margin-top: 2rem;
+        }
+    }
+    .categories-menu{
+        padding: 5rem 0rem;
+
+        ul{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            li{
+                padding: 0rem 0.2rem;
+                a{
+                    display: inline-block;
+                    padding: 0.2rem 2.5rem;
+                    font-size: 2rem;
+                    font-weight: 400;
+                    color: var(--colorblack);
+                    border-radius: 0.5rem;
+                    font-family: 'Poppins', sans-serif;
+                    transition: 0.5s all ease;
+
+                    &:hover{
+                        background: var(--colorred);
+                        color: var(--colorwhite);
+                    }
+                }
+            }
+            .active a{
+                background: var(--colorred);
+            }
+        }
+    }
+    .categories-items{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 2rem;
+
+        .single-item{
+            border: 0.1rem solid #ddd;
+            border-radius: 1rem;
+            padding: 5rem 0rem 2rem 0rem;
+            .img{
+                img{
+                    margin: 0 auto;
+                    height: 15rem;
+                }
+            }
+            .content{
+                text-align: center;
+
+                h3{
+                    font-size: 1.7rem;
+                    font-weight: 400;
+                    font-family: 'Poppins', sans-serif;
+                    text-transform: uppercase;
+                    color: var(--colorblack);
+                }
+            }
+        }
+    }
+    .categories-button{
+        text-align: center;
+        padding: 7rem 0rem 0rem 0rem;
+    }
+}

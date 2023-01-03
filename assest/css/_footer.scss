@@ -1,0 +1,118 @@
+.footer-area {
+    width: 100%;
+    position: relative;
+    background: var(--colorblack);
+    z-index: 1;
+
+    &::after {
+        position: absolute;
+        content: '';
+        right: 0;
+        top: -10rem;
+        background: url(../img/footer-shap.png)no-repeat;
+        width: 50rem;
+        height: 75.2rem;
+        z-index: -1;
+    }
+
+    .footer-logo {
+        padding-top: 7rem;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding: 6rem 0rem 10rem 0rem;
+        border-bottom: 0.2rem solid #ddd;
+        .col-3 {
+            flex-basis: 23%;
+
+            .location {
+
+                ul {
+                    li {
+                        padding-top: 2rem;
+
+                        a {
+                            font-size: 1.8rem;
+                            font-weight: 400;
+                            color: var(--colorwhite);
+                            font-family: 'Poppins', sans-serif;
+
+                            i {
+                                margin-right: 2rem;
+                                color: var(--colorwhite);
+                            }
+                        }
+                    }
+                }
+            }
+
+            h3 {
+                color: var(--colorwhite);
+                margin-bottom: 1rem;
+                font-size: 2.2rem;
+            }
+
+            .main {
+                ul {
+                    list-style: disc;
+
+                    li {
+                        padding-top: 2rem;
+                        font-size: 1.8rem;
+                        font-weight: 400;
+                        color: var(--colorwhite);
+                        font-family: 'Poppins', sans-serif;
+
+                        &::marker {
+                            color: var(--colorred);
+                        }
+                    }
+                }
+            }
+
+            .icon {
+                margin-top: 2.5rem;
+
+                ul {
+                    display: flex;
+
+                    li {
+                        padding: 0rem 2rem;
+
+                        a {
+
+                            i {
+                                font-size: 2rem;
+                                width: 4rem;
+                                height: 4rem;
+                                background: var(--colorwhite);
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 5rem;
+                                color: var(--colorred);
+                            }
+                        }
+
+                        &:first-child {
+                            padding-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        padding: 2rem 0;
+
+        p {
+            text-align: center;
+            color: var(--colorwhite);
+        }
+    }
+}

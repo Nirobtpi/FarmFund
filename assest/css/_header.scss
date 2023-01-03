@@ -1,0 +1,191 @@
+.header-area {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        position: absolute;
+        content: '';
+        background: url(../img/layer-3.png) no-repeat;
+        width: 65rem;
+        height: 73rem;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+    .top-header {
+        width: 100%;
+        padding: 4rem 0rem 0rem 0rem;
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            align-items: unset;
+            background-color: rebeccapurple;
+            padding: 1.3rem 0.5rem;
+            .logo {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .form {
+                    // display: none;
+
+                    ul {
+                        display: flex;
+
+                        li {
+                            padding: 0 2rem;
+
+                            .user {
+                                margin-right: 1rem;
+                                color: var(--colorwhite);
+                            }
+
+                            a {
+                                font-size: 1.6rem;
+                                font-weight: 400;
+                                color: var(--colorwhite);
+                                // color: #000;
+                            }
+
+                            i {
+                                font-size: 2rem;
+                            }
+
+                        }
+
+                        .bars {
+                            i {
+                                font-size: 3rem;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            nav {
+                display: none;
+                // background-color: rebeccapurple;
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    li {
+                        padding: 2rem 1rem;
+
+                        a {
+                            text-transform: uppercase;
+                            font-size: 1.7rem;
+                            font-weight: 400;
+                            color: var(--colorwhite);
+                            font-family: 'Poppins', sans-serif;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .banner-area {
+        width: 100%;
+        position: relative;
+
+        .sweep {
+            overflow: hidden;
+            padding: 20rem 0rem 10rem 0rem;
+
+            .me {
+
+                h1 {
+                    max-width: 40rem;
+                    line-height: 1.2;
+
+                    span {
+                        color: var(--colorred);
+                    }
+                }
+
+                p {
+                    padding: 5rem 0rem 6rem 0rem;
+                    font-size: 1.6rem;
+                    max-width: 52rem;
+                }
+            }
+        }
+
+        .items {
+            background-color: rgb(248, 250, 249);
+            // background: red;
+            max-width: 89rem;
+
+            ul {
+                display: flex;
+
+                li {
+                    padding: 0rem 3rem;
+                    border-right: 2px solid #ddd;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    font-family: 'Raleway', sans-serif;
+
+                    i {
+                        margin-right: 1rem;
+                        color: var(--colorred);
+                    }
+
+                    &:first-child {
+                        padding-left: 1rem;
+                    }
+
+                    &:last-child {
+                        border-right: none;
+                        padding-right: 0;
+                    }
+
+                    form {
+
+                        select {
+                            background: transparent;
+                            border: none;
+                            outline: none;
+                            font-size: 1.5rem;
+                            font-weight: 400;
+                            font-family: 'Raleway', sans-serif;
+                        }
+                    }
+                }
+
+                .btn {
+                    button {
+                        background: var(--colorblack);
+                        color: var(--colorwhite);
+                        padding: 1.2rem 6rem;
+                        border: none;
+                        font-size: 1.7rem;
+                        font-weight: 400;
+                        font-family: 'Poppins', sans-serif;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .info {
+            padding: 5rem 0rem 0rem 0rem;
+
+            .btn-sty {
+                margin-right: 1rem;
+                font-size: 1.6rem;
+                font-weight: 400;
+            }
+        }
+    }
+}

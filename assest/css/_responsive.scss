@@ -1,0 +1,268 @@
+@media all and (max-width:1200px) {
+    .container {
+        width: 90%;
+    }
+
+    // footer 
+    .footer-area::after {
+        width: 43rem;
+    }
+
+    .footer-area .row .col-3 .location ul li a {
+        font-size: 1.5rem;
+    }
+
+    .footer-area .row .col-3 {
+        flex-basis: 20%;
+    }
+}
+
+@media all and (max-width:991px) {
+    .header-area .banner-area .items ul li {
+        padding: 0rem 1rem;
+    }
+
+    .header-area .banner-area .sweep .me h1 span {
+        color: var(--colorblack);
+    }
+
+    .header-area .banner-area .items {
+        max-width: 72rem;
+    }
+
+    .about-area .about-items {
+        flex-direction: column;
+    }
+
+    .about-area .about-items .single-item {
+        padding: 3rem 0rem 0rem 0rem;
+    }
+
+    .about-area .about-items .single-item .about-content p {
+        max-width: 64rem;
+    }
+
+    .services-area .services-items {
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .services-area .services-heading h2 {
+        max-width: 28rem;
+        text-align: left;
+    }
+
+    .subscribe-area::after {
+        width: 75rem;
+        height: 68rem;
+        background-size: contain;
+    }
+
+    .subscribe-area .subscribe {
+        padding: 20rem 0rem 17rem 0rem;
+    }
+
+    .categories-area .categories-items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-area::after {
+        display: none;
+    }
+
+    .footer-area .row .col-3 {
+        flex-basis: 48%;
+        padding-bottom: 5rem;
+    }
+}
+
+@media all and (max-width:767px) {
+    .header-area .top-header .header .logo .form ul li {
+        display: none;
+    }
+
+    .bars {
+        display: block !important;
+    }
+
+    .header-area .banner-area .items {
+        display: none;
+    }
+
+    .services-area .services-items {
+        padding: 2rem 0;
+    }
+
+    .services-area::after {
+        width: 55rem;
+    }
+
+    .services-area .services-items .single-item {
+        flex-basis: 50%;
+        padding-bottom: 2rem;
+    }
+
+    .categories-area {
+        padding-top: 0;
+    }
+
+    .categories-area .categories-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .subscribe-area {
+        padding-top: 0;
+    }
+
+    .subscribe-area::after {
+        width: 54rem;
+        height: 50rem;
+    }
+
+    .subscribe-area .subscribe {
+        padding: 15rem 0rem 0rem 0rem;
+    }
+
+    .subscribe-area .subscribe h2 {
+        letter-spacing: 0rem;
+        font-size: 2.5rem;
+    }
+
+    .subscribe-area .subscribe form .ful input {
+        width: 70%;
+    }
+
+    .footer-area .row .col-3 {
+        flex-basis: 42%;
+    }
+}
+
+@media all and (max-width:575px) {
+    .header-area .banner-area .sweep {
+        padding: 11rem 0rem 0rem 0rem;
+    }
+
+    .services-area {
+        padding-top: 0;
+    }
+
+    .services-area::after {
+        display: none;
+    }
+
+    .services-area .services-items .single-item {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .services-area .services-items .single-item p {
+        max-width: 100%;
+    }
+
+    .services-area .services-items .single-item img {
+        margin: 0 auto;
+    }
+
+    .categories-area .categories-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .subscribe-area::after {
+        width: 96%;
+    }
+
+    .subscribe-area .subscribe h2 {
+        font-size: 2.3rem;
+    }
+
+    // footer 
+    .footer-area .footer-logo img {
+        margin: 0 auto;
+    }
+
+    .footer-area .row .col-3 {
+        flex-basis: 100%;
+    }
+
+    .location {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-area .row .col-3 h3 {
+        text-align: center;
+    }
+
+    .main {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-area .row .col-3 .icon ul {
+        justify-content: center;
+    }
+}
+
+@media all and (max-width:480px) {
+    .header-area .banner-area .sweep .me h1 {
+        font-size: 4rem;
+    }
+
+    .header-area .banner-area .sweep {
+        padding: 8rem 0rem 16rem 0rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .services-area .services-heading h2 img {
+        display: none;
+    }
+
+    .services-area .services-heading h2 {
+        text-align: center;
+    }
+
+    .categories-area .categories-heading h2 img {
+        display: none;
+    }
+
+    .categories-area .categories-menu ul li {
+        padding: 1rem 0.2rem;
+    }
+
+    .subscribe-area::after {
+        display: none;
+    }
+
+    .subscribe-area .subscribe h2 {
+        color: black;
+    }
+
+    .subscribe-area .subscribe form .ful input {
+        width: 100%;
+        border: 0.1rem solid black;
+    }
+
+    .subscribe-area .subscribe {
+        padding: 0rem 0rem 0rem 0rem;
+    }
+
+    .contact-us-area .contact-heading h2 img {
+        display: none;
+    }
+
+    .contact-us-area {
+        padding-top: 0;
+    }
+
+    .contact-us-area .form form .full-box input {
+        width: 100%;
+    }
+
+    .footer-area .row {
+        padding: 6rem 0rem 2rem 0rem;
+    }
+}
